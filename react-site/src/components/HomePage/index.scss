@@ -1,0 +1,67 @@
+.home-page {
+
+  background-image: url("../../assets/images/omori.png");
+
+    .introduction {
+        position: absolute;
+        left: 10%;
+        top: 48%;
+        transform: translateY(-50%);
+      }
+
+    h1 {
+        color: rgb(8, 8, 8);
+        font-size: 85px;
+        line-height: 80px;
+        margin: 0;
+        font-family: 'Coolvetica';
+        font-weight: 1;
+      }
+
+      h2 {
+        color: #8d8d8d;
+        margin-top: 20px;
+        font-size: 14px;
+        font-family: sans-serif;
+        letter-spacing: 5px;
+        animation: fadeIn 0.5s 1.8s backwards;
+      }
+    
+      .button {
+        background: #fffefe;
+        border: 1px solid #6200ff;
+        color: #6200ff;
+        font-size: 100%;
+        font-weight: 400;
+        letter-spacing: 4px;
+        font-family: sans-serif;
+        text-decoration: none;
+        padding: 10px 18px;
+        margin-top: 25px;
+        float: left;
+        animation: fadeInAnimation 1s 1.8s backwards;
+        white-space: nowrap;
+    
+        &:hover {
+          background: #c7a1f3;
+          border: 1px solid #8f22b9;
+          color: #333;
+        }
+      }
+
+      .intro-image {
+        img {
+          display: block;
+          margin-top: -10%;
+          margin-left: 50%;
+          width: 70px;
+          height: auto;
+          animation: swayAnimation 12s infinite;
+          transform-origin: 25% 50% 0;
+        }
+        @keyframes swayAnimation {
+          0%, 100%{ transform: rotate(-9deg);}
+          50%{ transform: rotate(11deg); }
+        }
+      }
+}

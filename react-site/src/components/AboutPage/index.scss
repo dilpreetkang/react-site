@@ -1,0 +1,84 @@
+.about-page {
+    background-image: url("../../assets/images/omori.png");
+
+    .about {
+        position: absolute;
+        left: 20%;
+        top: -6%;
+        transform: translateY(-50%);
+      }
+
+    h1 {
+        color: rgb(8, 8, 8);
+        font-size: 50px;
+        line-height: 80px;
+        margin: 0;
+        font-family: 'Coolvetica';
+        font-weight: 1;
+    }
+
+    h2 {
+        color: rgb(255, 255, 255);
+        font-size: 25px;
+        line-height: 25px;
+        margin: 0;
+        font-family: 'Coolvetica';
+        font-weight: lighter;
+        padding-bottom: 10px;
+        letter-spacing: 10px;
+    }
+
+    h3 {
+        color: rgb(0, 0, 0);
+        font-size: 25px;
+        line-height: 25px;
+        margin: 0;
+        font-family: 'Coolvetica';
+        font-weight: lighter;
+        padding-bottom: 10px;
+        letter-spacing: 10px;
+    }
+
+    .about-text {
+        position: absolute;
+        left: 13%;
+        top: 10%;
+        right: 30%;
+    }
+
+    p {
+        background-color: rgb(0, 0, 0);
+        text-align: left;
+        font-size: 15px;
+        border-radius: 10px;
+        padding: 10px;
+
+        &:hover {
+            zoom: 110%;
+        }
+
+        b {
+            color: rgb(128, 55, 196);
+        }
+    }
+
+    p2 {
+        position: absolute;
+        left: 72%;
+        top: 13%;
+        right: 1%;
+        background-color: rgb(255, 255, 255);
+        text-align: center;
+        font-size: 15px;
+        border-radius: 25px;
+        padding: 10px;
+
+        &:hover {
+            zoom: 110%;
+        }
+
+        b {
+            color: rgb(128, 55, 196);
+        }
+    }
+}

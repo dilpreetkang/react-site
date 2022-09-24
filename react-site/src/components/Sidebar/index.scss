@@ -1,0 +1,101 @@
+.nav-bar {
+    background: #000000;
+    text-align: left;
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    top:0;
+    z-index: 3;
+    min-height: 500px;
+
+    .logo {
+        display: block;
+        padding: 8px 0;
+
+        img {
+            display: block;
+            margin: 8px auto;
+            width: 100px;
+            height: auto;
+
+            &.sub-logo {
+                width: 90px;
+            }
+
+        }
+    }
+
+    nav {
+        display: block;
+        position: absolute;
+        text-align: center;
+        height: 200px;
+        top: 50%;
+        margin-top: -120px;
+        width: 100%;
+        
+        a {
+            font-size: 40px;
+            padding-top: 50px;
+            display: block;
+            line-height: 50px;
+            height: 50px;
+            position: relative;
+            text-decoration: none;
+
+            i {
+                transition: all 0.3s ease-out;
+            }
+
+            &:hover {
+                color: #8e55e9;
+
+                svg {
+                    opacity: 0;
+                }
+
+                &:after {
+                    opacity: 1;
+                }
+            }
+
+            &:after {
+                content: '';
+                font-size: 15px;
+                letter-spacing: 1px;
+                position: absolute;
+                text-align: center;
+                bottom: 0;
+                display: block;
+                width: 100%;
+                opacity: 0;
+                transition: all 0.1s ease-out;
+            }
+
+            &:first-child {
+                &::after {
+                    content: 'HOME';
+                }
+            }
+
+            &.about-link {
+                &:after {
+                    content: 'ABOUT';
+                }
+            }
+
+            &.contact-link {
+                &:after {
+                    content: 'CONTACT';
+                }
+            }
+
+            &.active {
+                svg {
+                    color: #944fe4;
+                }
+            }
+            
+        }
+    }
+}

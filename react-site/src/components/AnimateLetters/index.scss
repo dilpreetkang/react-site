@@ -1,0 +1,26 @@
+.text-animate {
+    display: inline-block;
+    opacity: 0;
+    animation: bounceIn;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    min-width: 10px;
+  }
+  
+  .text-animate-hover {
+    min-width: 10px;
+    display: inline-block;
+    animation-fill-mode: both;
+  
+    &:hover {
+      animation: bounceIn 1s;
+      color: #ffffff;
+    }
+  }
+
+  @for $i from 1 through 11{
+    .text-animate._#{$i} {
+      animation-delay: #{2+($i / 10)}s;
+    }
+  }
